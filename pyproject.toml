@@ -1,7 +1,7 @@
 [project]
 name = "pc-clusterizacao"
 version = "0.1.0"
-description = "Add your description here"
+description = "Clusterização não supervisionada de imagens de fundo de olho (HYGD) com K-Means"
 readme = "README.md"
 authors = [
     { name = "Luiz Eduardo", email = "57048776+luizcodedthat@users.noreply.github.com" }
@@ -18,12 +18,8 @@ dependencies = [
     "torchvision==0.29.1+cu130",
 ]
 
-[project.scripts]
-pc-clusterizacao = "pc_clusterizacao:main"
+[tool.uv]
+package = false
 
 [[tool.uv.index]]
 url = "https://download.pytorch.org/whl/cu130"
-
-[build-system]
-requires = ["uv_build>=0.12.10,<0.13.0"]
-build-backend = "uv_build"
